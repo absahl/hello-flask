@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Flask is remembering Allah</title>
+{% if color %}
+{% if urn %}
+<h1 style="color:{{ color }};">{{ urn }} is doing Allah's zikr!</h1>
+{% else %}
+<h1 style="color:{{ color }};">Everything is doing Allah's zikr!</h1>
+{% endif %}
+{% else %}
+{% if urn %}
+<h1>{{ urn }} is doing Allah's zikr!</h1>
+{% else %}
+<h1>Everything is doing Allah's zikr!</h1>
+{% endif %}
+{% endif %}
