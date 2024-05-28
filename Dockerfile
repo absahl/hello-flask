@@ -9,4 +9,4 @@ COPY . /opt/source-code
 RUN pip3 install --upgrade pip
 RUN pip3 install -r /opt/source-code/requirements.txt
 
-ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run --host=0.0.0.0
